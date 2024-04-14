@@ -1,5 +1,6 @@
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     "C_Cpp_Runner.cCompilerPath": "gcc",
     "C_Cpp_Runner.cppCompilerPath": "C:\\msys64\\ucrt64\\bin\\g++.exe",
     "C_Cpp_Runner.debuggerPath": "gdb",
@@ -123,6 +124,8 @@
     }
   }
 =======
+=======
+>>>>>>> f818074eb7da71dd8264d4ce220283ece9e3a056
   "C_Cpp_Runner.cCompilerPath": "gcc",
   "C_Cpp_Runner.cppCompilerPath": "g++",
   "C_Cpp_Runner.debuggerPath": "gdb",
@@ -180,5 +183,9 @@
   "C_Cpp_Runner.showCompilationTime": false,
   "C_Cpp_Runner.useLinkTimeOptimization": false,
   "C_Cpp_Runner.msvcSecureNoWarnings": false
+<<<<<<< HEAD
+}
+>>>>>>> f818074eb7da71dd8264d4ce220283ece9e3a056
+=======
 }
 >>>>>>> f818074eb7da71dd8264d4ce220283ece9e3a056
