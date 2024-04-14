@@ -15,8 +15,6 @@ private:
         // Check if any driver is available at the pickup location
         for (const auto& driver : drivers) {
             // For simplicity, let's assume driver is available if they are in the same location
-            // cout<<"driver report"<<endl;
-            // cout<<driver.getName()<<driver.getContactInfo()<<driver.getLocation()<<driver.getVehicleType()<<endl;
             if (driver.getLocation() == pickupLocation) {
                 return true;
             }

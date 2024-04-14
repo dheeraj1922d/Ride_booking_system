@@ -35,21 +35,26 @@ public:
         ifstream file(filename);
         string name, contact, vehicle, location;
 
-        if (file.is_open())
+        if (!file.is_open())
         {
-            while (getline(file, name, ','))
-            {
-                getline(file, contact, ',');
-                getline(file, vehicle, '\n');
-                getline(file, location, '\n');
-                drivers.push_back(Driver(name, contact, vehicle, location));
-            }
-            file.close();
-            cout << "Driver data loaded successfully.\n";
+            cout << "Unable to open file to load driver data.\n";
+            return drivers; // Return empty vector if unable to open file
+        }
+
+        while (getline(file, name, ',') && getline(file, contact, ',') && getline(file, vehicle, ',') && getline(file, location, '\n'))
+        {
+            drivers.push_back(Driver(name, contact, vehicle, location));
+        }
+
+        file.close();
+
+        if (drivers.empty())
+        {
+            cout << "No data loaded from file.\n";
         }
         else
         {
-            cout << "Unable to open file to load driver data.\n";
+            cout << "Driver data loaded successfully.\n";
         }
 
         return drivers;
