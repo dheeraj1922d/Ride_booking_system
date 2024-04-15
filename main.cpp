@@ -1,4 +1,5 @@
 #include <iostream>
+#include <iomanip>
 #include <string>
 #include "driverMgr.hpp"
 #include "riderMgr.hpp"
@@ -36,6 +37,7 @@ void displayDriverDetails(const Driver& driver, double cost) {
     cout << "Cost per Kilometer: " << cost << " rupees" << endl;
 }
 
+
 // Main function
 int main() {
     // Take personal details of the user
@@ -60,7 +62,7 @@ int main() {
 
         // Confirm the trip
         TripManager tripManager;
-        tripManager.confirmTrip(trip);
+        tripManager.confirmTrip(trip , Rider(name , contact));
 
         // Stop the program
         cout << "\nThank you for using our service!\n";
